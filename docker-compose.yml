@@ -1,0 +1,13 @@
+services:
+  memereviewbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PYTHONUNBUFFERED=1
+    env_file:
+      - .env
+    volumes:
+    - ./lastExecution.json:/app/lastExecution.json
+    command: python main.py
+    restart: unless-stopped
