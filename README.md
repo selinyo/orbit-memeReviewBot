@@ -2,7 +2,7 @@
 A Slackbot for OrbitNTNU!
 
 Members post memes in the channel, and the memebot will collect all recent memes into a Google Form.
-How to use it in Slack:
+How to use it in Slack using slash commands:
 - /memereview! : the bot creates a Google Form with all recent memes, where people can vote for their favorite meme.
 - /getwinner : the bot announces the winner meme.
 
